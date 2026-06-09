@@ -36,10 +36,11 @@ P_grid(t) = P_load(t) - [P_bess(t) * eta_inv]
 Where P_grid is the net grid-facing power measured at the revenue meter, P_load is the unmitigated facility baseline load, P_bess is the internal battery electrochemical discharge rate, and eta_inv represents the overall operational efficiency of the power conversion inverter. The utility observes a perfect, immediate demand drop at the meter, while the internal industrial assembly lines remain entirely undisturbed.
 ### 4. Operational Dispatch Classifications: Performance Metrics Matrix
 The functional parameters of automated demand response vary significantly based on market clearings, network topology, and programmatic contractual frameworks. The table below details these attributes:
-Dispatch Protocol Category	Telemetry & Metrology Bandwidth	Maximum Response Latency	Primary Edge Execution Strategy
-Critical Peak Pricing (CPP)	Low Frequency; daily intervals via standard XML schemas.	4 Hours to 24 Hours Notice	Structural pre-cooling cycles; industrial batch process rescheduling schedules.
-Capacity Bidding / Fast Shed	Medium Frequency; 15-minute intervals pushed via EiReport.	15 Minutes to 1 Hour Notice	Global temperature setpoint adjustments; automated cycling of auxiliary lighting matrices.
-Fast Ancillary Frequency Regulation	High Frequency; sub-second streaming via dedicated telemetry pipelines.	Under 2 Seconds (Deterministic)	High-speed electrochemical BESS injection matching; emergency VFD frequency dampening.
+| Dispatch Protocol Category | Telemetry & Metrology Bandwidth | Maximum Response Latency | Primary Edge Execution Strategy |
+| :--- | :--- | :---: | :--- |
+| **Critical Peak Pricing (CPP)** | Low Frequency; daily intervals via standard XML schemas. | 4 Hours to 24 Hours Notice | Structural pre-cooling cycles; industrial batch process rescheduling schedules. |
+| **Capacity Bidding / Fast Shed** | Medium Frequency; 15-minute intervals pushed via EiReport. | 15 Minutes to 1 Hour Notice | Global temperature setpoint adjustments; automated cycling of auxiliary lighting matrices. |
+| **Fast Ancillary Frequency Regulation** | High Frequency; sub-second streaming via dedicated telemetry pipelines. | Under 2 Seconds (Deterministic) | High-speed electrochemical BESS injection matching; emergency VFD frequency dampening. |
 
  
 ##### Figure 2: Closed-Loop Telemetry System Transaction Sequence and State Machine Dynamics.
